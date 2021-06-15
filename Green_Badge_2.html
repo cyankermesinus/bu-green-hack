@@ -1,0 +1,46 @@
+<DOCTYPE! html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="style_sheet_G.css">
+
+</head>
+<body BGCOLOR=" #56D81C">
+<div id = "quarantineBadge" class="Cleared">
+	<div style="position: fixed; top: 0; left :0; width: 100vw; 	z-index: 9999;">
+	<!--<img src="C:/Users/cxj/Desktop/Learning/CS/BU_Hack/src/exit_btn.png" alt="exiting button" style="vertical-align:right;margin:0px 0px">
+	</div>-->
+	<p>Clearance Status</p>
+	<h1 style ="margin-top: -20px; font-size: 2.75em; font-family:'Open Sans';">Cleared
+	</h1>
+	<$php 
+	$time_now = DateTime("now", new DateTimeZone("America/New York"));
+	echo "<style="font-size: 1.4em; margin-top: 10px; font-family:'Open Sans';>" $time_now ->format("n/j/Y g/i/A");
+	?>
+	<div id="patInfo" class="row text-center" 	style="margin-top:15px;">
+	<div class ="col">
+	<img src="C:/Users/cxj/Desktop/Learning/CS/BU_Hack/buhack/src/user.png" alt="Patient Image" 
+	style="max-width: 85px; margin-top:-15px;">
+
+<div class="col">
+<!-- h3 mb-0-->
+	<?php
+	echo "<p style="margin-top: 4px; font-weight: bold; "> "$_POST["lname"], $_POST["fname"]"
+	"</p>";
+	?>
+
+</div>
+<div class="col"> 
+ <span id="badgedob" class="ml-2">July 21</span>
+</div>
+  <div class="col"> #U72101419 </div>
+</div>
+<div id="labclear" style="font-size: 1.25em">Next Lab Test Due: <time>6/12/2021  6:34  PM</time></div>
+<div id="surveyoverdue" style="font-size: 1.25em">Next Survey Due: 6/12/2021  4:35  PM</div>
+<div id="badgeqr" class="mt-2">
+	<img src="C:/Users/cxj/Desktop/Learning/CS/BU_Hack/src/buhack/download.png">
+</div>
+</body>
+</html>
+
+
+	
